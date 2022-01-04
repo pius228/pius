@@ -1,3 +1,15 @@
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    spaceBetween:50,
+    slidesPerView: 3,
+    loop: true,
+    stopOnLastSlide:true,
+    autoplay:{
+        delay:5000
+    }
+  });
+
+
 /* Значение из текстовых инпутов:*/
 const anInitialFee = document.getElementById('an-initial-fee'), // первоначальный взнос
       creditTerm = document.getElementById('credit-term'); // срок кредита
@@ -29,12 +41,6 @@ assignValue();
 
 
 calculation();
-
-
-
-
-
-
 
 
 
